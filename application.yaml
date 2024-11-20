@@ -18,3 +18,5 @@ spec:
         image: docker.pkg.github.com/weiweizhangr/helloworld/my-node-app:latest  # 更新镜像版本
         ports:
         - containerPort: 3000
+      imagePullSecrets:
+        - name: github-registry-credentials
